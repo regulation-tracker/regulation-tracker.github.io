@@ -152,7 +152,8 @@ body:not(.logged-in) #grid {
 }
 
 body:not(.logged-in) .remove-btn,
-body:not(.logged-in) .regulation-logged {
+body:not(.logged-in) .regulation-logged,
+body:not(.logged-in) #loginItem {
   display: none !important;
 }
 
