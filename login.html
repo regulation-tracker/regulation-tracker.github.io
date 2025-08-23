@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Regulation Tracker Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="js/login.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html">
+                home
+            </a>
+        </div>
+        <h1>regulation tracker</h1>
+        <div>
+
+            <a href="https://www.patreon.com/TheRegulationPod" target="_blank">
+                <img src="img/patreon.png" alt="Patreon" style="height: 30px; width: 30px;">
+            </a>
+        </div>
+    </header>
+    <section class="regulation-section">
+        <div id="login">
+            <input id="email" type="email" placeholder="Email">
+            <input id="password" type="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </div>
+
+        <div id="error" style="color:red; margin-block:20px;"></div>
+
+        <div id="logged-in-message" style="display:none;">
+            <p>You are already logged in.</p>
+            <button onclick="logout()">Logout</button>
+        </div>
+
+    </section>
+
+    <footer>
+        <a href="https://www.patreon.com/TheRegulationPod" target="_blank">regulation podcast</a>
+        <span>|</span>
+        <a href="https://handtosky.com.au/" target="_blank">nick nancarrow (nicknancs)</a>
+
+    </footer>
+</body>
+
+</html>
