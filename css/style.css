@@ -100,6 +100,16 @@ header {
   align-items: center;
 }
 
+.header-title {
+  display: flex;
+  align-items: center;
+}
+
+.header-title img {
+  max-width: 45px;
+  margin-left: 5px;
+}
+
 header a {
   text-decoration: none;
 }
