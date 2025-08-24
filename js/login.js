@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .signInWithEmailAndPassword(email, password)
       .then(() => {
         //alert("Login successful! Return to tracker to edit.");
-        window.location.href = "index.html";
+        window.location.href = "https://regulation-tracker.github.io/";
       })
       .catch((err) => {
         errorDiv.innerText = err.message;
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.logout = () => {
     auth.signOut().then(() => {
       // Redirect back to tracker page after logout
-      window.location.href = "index.html";
+      window.location.href = "https://regulation-tracker.github.io/";
     });
   };
 
