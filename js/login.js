@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
     auth
       .signInWithEmailAndPassword(email, password)
       .then(() => {
-        alert("Login successful! Return to tracker to edit.");
-        window.location.href = "https://regulation-tracker.github.io/";
+        //alert("Login successful! Return to tracker to edit.");
+        window.location.href = "index.html";
       })
       .catch((err) => {
         errorDiv.innerText = err.message;
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.logout = () => {
     auth.signOut().then(() => {
       // Redirect back to tracker page after logout
-      window.location.href = "https://regulation-tracker.github.io/";
+      window.location.href = "index.html";
     });
   };
 
